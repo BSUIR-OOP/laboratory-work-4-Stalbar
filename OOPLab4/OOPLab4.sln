@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPLab4", "OOPLab4\OOPLab4.csproj", "{9DC9CCE8-C3BA-40F0-AA70-343E27981978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_Library", "DI_Library\DI_Library.csproj", "{BE17A08C-C76F-4FF0-9907-D04C18EE8B5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DC9CCE8-C3BA-40F0-AA70-343E27981978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC9CCE8-C3BA-40F0-AA70-343E27981978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC9CCE8-C3BA-40F0-AA70-343E27981978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC9CCE8-C3BA-40F0-AA70-343E27981978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE17A08C-C76F-4FF0-9907-D04C18EE8B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE17A08C-C76F-4FF0-9907-D04C18EE8B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE17A08C-C76F-4FF0-9907-D04C18EE8B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE17A08C-C76F-4FF0-9907-D04C18EE8B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E4BE5D0-99F9-491C-AFCC-D633AF1C6390}
+	EndGlobalSection
+EndGlobal
