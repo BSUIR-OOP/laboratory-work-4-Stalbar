@@ -44,7 +44,7 @@ namespace DI_Library
             return false;
         }
 
-        public void CheckForCycles(Type objType)
+        public string CheckForCycles(Type objType)
         {
             if (IsContainsCycle(objType))
             {
@@ -53,8 +53,9 @@ namespace DI_Library
                 {
                     errMsg += $"{dependency.Name} ";
                 }
-                throw new CycleException(errMsg);
+                return errMsg;
             }
+            return null;
         }
     }
 }
