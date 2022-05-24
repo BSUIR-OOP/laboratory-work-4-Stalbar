@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace OOPLab4
+namespace MainPart
 {
     /// <summary>
     /// Interaction logic for App.xaml

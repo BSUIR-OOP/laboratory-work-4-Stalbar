@@ -39,7 +39,7 @@
                 dependency.AddImplementation(implementation);
             }
 
-            return implementation;s
+            return implementation;
         }
     }
 }
