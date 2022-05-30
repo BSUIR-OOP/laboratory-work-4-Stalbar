@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MainPart
+namespace DI_Library
 {
-    public interface IIdWriter
+    public enum LifeTime
     {
-        public string Id { get; }
-
-        public void Write();
+        Singleton,
+        Transient
     }
 }

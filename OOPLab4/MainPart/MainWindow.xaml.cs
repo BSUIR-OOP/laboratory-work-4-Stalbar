@@ -23,46 +23,7 @@ namespace MainPart
     {
         public MainWindow()
         {
-            try
-            {
-                InitializeComponent();
-
-                var container2 = new DependencyContainer();
-                var error2 = new CycleError();
-                string err = error2.CheckForCycles(typeof(IdWriter));
-                if (err != null)
-                {
-                    throw new CycleException(err);
-                }
-                container2.AddSingleton<IdWriter, IIdWriter>();
-
-                var resolver2 = new DependencyResolver(container2);
-
-                var service3 = resolver2.GetService<IIdWriter>();
-                service3.Write();
-                var service4 = resolver2.GetService<IIdWriter>();
-                service4.Write();
-
-                var container1 = new DependencyContainer();
-                var error = new CycleError();
-                err = error.CheckForCycles(typeof(IdWriter));
-                if (err != null)
-                {
-                    throw new CycleException(err);
-                }
-                container1.AddTransient<IdWriter, IIdWriter>();
-
-                var resolver1 = new DependencyResolver(container1);
-
-                var service1 = resolver1.GetService<IIdWriter>();
-                service1.Write();
-                var service2 = resolver1.GetService<IIdWriter>();
-                service2.Write();
-            }
-            catch (CycleException ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+  
         }
     }
 }
