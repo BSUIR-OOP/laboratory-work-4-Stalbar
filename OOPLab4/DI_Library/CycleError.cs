@@ -14,7 +14,7 @@ namespace DI_Library
 
         public bool IsContainsCycle(Type objType)
         {
-            fields.Add(objType);
+            fields.Add(objType); 
             var objectFields = objType.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
             List<Type> fieldsList = new List<Type>();
             foreach(var field in objectFields)

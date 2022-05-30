@@ -15,5 +15,8 @@ namespace DI_Library
 
         public void AddTransient<TService, TImplementation>()
             => servicesList.Add(new DescriptorOfService(typeof(TService), typeof(TImplementation), LifeTime.Transient));
+
+        public DIContainer GetContainer()
+            => new DIContainer(servicesList);
     }
 }
