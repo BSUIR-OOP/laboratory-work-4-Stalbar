@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Reflection;
 
 namespace DI_Library
 {
@@ -14,10 +9,10 @@ namespace DI_Library
 
         public bool IsContainsCycle(Type objType)
         {
-            fields.Add(objType); 
+            fields.Add(objType);
             var objectFields = objType.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
             List<Type> fieldsList = new List<Type>();
-            foreach(var field in objectFields)
+            foreach (var field in objectFields)
             {
                 if (field.FieldType.IsClass)
                 {
@@ -25,7 +20,7 @@ namespace DI_Library
                         fieldsList.Add(field.FieldType);
                 }
             }
-            foreach(var field in fieldsList)
+            foreach (var field in fieldsList)
             {
                 if (fields.Contains(field) == false)
                 {
@@ -49,7 +44,7 @@ namespace DI_Library
             if (IsContainsCycle(objType))
             {
                 string errMsg = $"Cycle: {dependencyList.Last().Name}";
-                foreach(var dependency in dependencyList)
+                foreach (var dependency in dependencyList)
                 {
                     errMsg += $"{dependency.Name} ";
                 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DI_Library
+﻿namespace DI_Library
 {
     public class DescriptorOfService
     {
@@ -20,7 +14,7 @@ namespace DI_Library
         {
             TypeOfService = serviceType;
             TypeOfImplementation = implementationType;
-            Lifetime = lifetime; 
+            Lifetime = lifetime;
         }
     }
 }
